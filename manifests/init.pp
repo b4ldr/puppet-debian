@@ -1,4 +1,5 @@
-# class to set up metadat functions for debian
+# @summary preform basic constraints tests and configure variables
+#          this class will be called automaticly
 class debian {
     unless $facts['os']['family'] == 'Debian' {
         fail('Only Debian is supported')

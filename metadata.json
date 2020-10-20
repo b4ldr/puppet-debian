@@ -1,0 +1,29 @@
+{
+  "name": "puppet-debian",
+  "version": "0.0.1",
+  "author": "b4ldr",
+  "summary": "A module to deploy provid debian helper functions",
+  "license": "Apache-2.0",
+  "source": "git://github.com/b4ldr/puppet-debian.git",
+  "project_page": "https://github.com/b4ldr/puppet-debian",
+  "issues_url": "https://github.com/b4ldr/puppet-debian/issues",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 5.5.8 < 7.0.0"
+    }
+  ],
+  "dependencies": [
+  ]
+}

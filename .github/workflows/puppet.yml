@@ -1,0 +1,16 @@
+name: puppet rspec tests
+on:
+  - push
+jobs:
+  puppet_rspec:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Ruby 2.6
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.6'
+      - name: bundle install
+        run: bundle install
+      - name: rspec
+        run: bundle exec rake spec
